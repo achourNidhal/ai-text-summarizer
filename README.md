@@ -97,6 +97,30 @@ http://127.0.0.1:8000/docs
 
 ---
 
+# Docker Deployment
+
+## Build the Docker image
+
+```bash
+docker build -t ai-text-summarizer .
+```
+
+## Run the container
+
+```bash
+docker run -p 8000:8000 -e OPENAI_API_KEY=your_api_key_here ai-text-summarizer
+```
+
+The API will be available at:
+
+http://localhost:8000
+
+Interactive API documentation:
+
+http://localhost:8000/docs
+
+---
+
 # API Endpoints
 
 ## 1️⃣ Summarize using OpenAI
